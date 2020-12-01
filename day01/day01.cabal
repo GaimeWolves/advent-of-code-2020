@@ -3,15 +3,12 @@ version:             0.1.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/GaimeWolves/day01#readme
-license:             BSD3
-license-file:        LICENSE
 author:              GameWolves
 maintainer:          gamewolvesofficial@gmail.com
 copyright:           2020 GameWolves
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
-extra-source-files:  README.md
 
 executable day01
   hs-source-dirs:      src
