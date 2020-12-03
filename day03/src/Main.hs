@@ -22,6 +22,7 @@ takeN n = map snd . filter ((== 1) . fst) . zip (cycle [1..n])
 
 countTreesN :: [[Bool]] -> ([Int], Int) -> Int
 countTreesN m (x, y) = countTrees (zip x (takeN y m))
+
 args :: [([Int], Int)]
 args = [
   ([0,1..], 1),
