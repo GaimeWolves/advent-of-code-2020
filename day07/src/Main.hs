@@ -65,4 +65,4 @@ main = do
     tree = toTree2 bags
     in do
       -- putStrLn (drawTree $ fmap show tree)
-      print (snd (foldTree (\b bs -> (fst b, if null bs then snd b else snd b + snd b * sum (map snd bs))) tree) - 1)
+      print (snd (foldTree (\(n, c) bs -> (n, c + c * sum (map snd bs))) tree) - 1)
