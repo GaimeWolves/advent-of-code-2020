@@ -1,11 +1,11 @@
 module Main where
 
-import Control.Lens
-import Data.List
-import Data.List.Split
-import Data.Maybe
+import Control.Lens (element, (.~), (?~))
+import Data.List (find)
+import Data.List.Split (splitOn)
+import Data.Maybe (fromMaybe, isNothing)
 import System.Environment (getArgs)
-import Text.Pretty.Simple
+import Text.Pretty.Simple ()
 
 data Tile = Tile Int [[Bool]]
 
